@@ -12,10 +12,14 @@ Use Google or another search engine to explore the following questions. Take not
 ### Research Questions
 
 1. **What kinds of networking jobs exist today?**  
+<<<<<<< HEAD
    Look into roles like network administrator, cloud network engineer, and data center technician. What do these jobs involve? 
    - According to Google, some commom entry-level roles include network support specialist which provides assistance to users, troubleshoots network issues. A Network technician installs, maintains, and troubleshoots network systems. Help desk technicians resolve technical problems for users, often the first point of contact for network-related issues.
    Some mid-level roles include a network administrator who oversees the daily operations, maintainence, and security of computer networks, LANS, WANS and cloud networks, amongst other things. Computer systems analyst, analyze organizations computer systems and networks to identify areas for improvement and design ways to make it better. Network security specialists focus on safeguarding networks from cyber threats, including installing firewalls, configuring security protocols, and managing intrusion detection systems. SOme more advanced roles like a network engineer, designs, implements, and maintains computer networks, often playing a critical role in an organization's IT department. Network architect designs complex network systems including local area networks, wide area networks, and cloud based networks.
    Wireless engineers specialize in installing and configuring wireless network systems. CLoud network engineers manage and optimize cloud-based networking solutions, becoming increasingly important as businesses migrate to cloud platforms. Network security engineer designs, implements. and manages security programs to protect an organizations information from cyber threats.
+=======
+   Look into roles like network administrator, cloud network engineer, and data center technician. What do these jobs involve? - According to Google, computer networking is a growing field with a variety of jobs opportunities such as network engineer which designs, implements, and maintain computer networks. Network administrators
+>>>>>>> 96cf559311cac829b26101b6547f554a1d365325
 
 2. **How has the rise of cloud computing changed networking careers?**  
    Explore how companies like AWS, Azure, and Google Cloud have centralized many networking functions.
