@@ -29,7 +29,7 @@ Use Google or another search engine to explore the following questions. Take not
 
 4. **How do laws and regulations affect how networks are built?**  
    Search for examples of compliance requirements (like HIPAA or GDPR) that influence network design.
-   Laws and regulations impact how networks are built by making sure everything is in compliance, especially when dealing with sensitive data. Operating in compliance with these laws and regulations make sure that we do not get fined and we can maintain a good reputation.
+   Laws and regulations impact how networks are built by making sure everything is in compliance, especially when dealing with sensitive data. Operating in compliance with these laws and regulations make sure that we do not get fined and we can maintain a good reputation. A lot of regulations mandate security measures such as firewalls, intrusion detection systems, and strong access controls, to protect data. These data protection laws like HIPAA use guidelines for how data is handled and stored. Depending on what kind of data, some sort of encryption may be necesary.
 
 5. **What impact is AI having on networking?**  
    Find out how automation, machine learning, and AI tools are changing how networks are monitored and managed.
