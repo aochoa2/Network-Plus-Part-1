@@ -26,6 +26,7 @@
 
 **Screenshot Placeholder:**  
 `!ipconfig output`
+![alt text](image-1.png)
 
 ---
 
@@ -33,28 +34,28 @@
 
 **Screenshot Placeholder:**  
 `![ARP request frame](path/to/screenshot`
-
+![alt text](image-2.png)
 ---
 
 ### Step 4: Examine the Ethernet II header contents of an ARP request
 
 1. **What is significant about the contents of the destination address field?**  
-   _Answer:_  
+   _Answer: It is where the data packet or frame is sent.
 
 2. **Why does the PC send out a broadcast ARP prior to sending the first ping request?**  
-   _Answer:_  
+   _Answer: The broadcast ARP is sent out first because it needs to figure out what the MAC address is before it can send out the packet. It needs to know who the IP address belongs to before it can start constructing the packet to be sent out.
 
 3. **What is the MAC address of the source in the first frame?**  
-   _Answer:_  
-
+   _Answer:_  (60:9c:9f:c6:72:50)
+      
 4. **What is the Vendor ID (OUI) of the Source NIC in the ARP reply?**  
-   _Answer:_  
+   _Answer:_  60:9c:9f
 
 5. **What portion of the MAC address is the OUI?**  
-   _Answer:_  
+   _Answer:_  The first three octects of the MAC address is the OUI.
 
 6. **What is the NIC serial number of the source?**  
-   _Answer:_  
+   _Answer:_  c6:72:50
 
 ---
 
