@@ -61,7 +61,7 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 
 **Question:**  
 - Which two multicast groups are assigned to interface G0/0/0?  
-  _Answer:_  
+  _Answer:_  ff02::2 ff02::1
 
 ---
 
@@ -72,9 +72,9 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 
 **Questions:**  
 - Has an IPv6 unicast address been assigned to PC-B?  
-  _Answer:_  
+  _Answer:_  No
 - Why did PC-B receive the Global Routing Prefix and Subnet ID from R1?  
-  _Answer:_  
+  _Answer:_  On R1, all its IPv6 interfaces joined FF02::2 that includes all routers. This lets R1 send messages to all devices on the local network. These messages tell the devices about the network address and the subnet. R1 also tells the devices that its address fe80::1 is the gateway to use. The PCs will use this info to automatically set their own IPv6 address and gateway, as long as the network part of the address is 64 bits long.
 
 ---
 
@@ -107,10 +107,10 @@ In this lab, you will configure IPv6 addresses on hosts and network devices. You
 ## Reflection Questions
 
 1. Why can the same link-local address `fe80::1` be assigned to both Ethernet interfaces on R1?  
-   _Answer:_  
+   _Answer:_  fe80::1 can be used in multiple ethernet interfaces in a router because it is only required to be unique or different within a single link. So because it is used on G0/0/0 does not mean that it is the same when used on G0/0/1.
 
 2. What is the Subnet ID of the IPv6 unicast address `2001:db8:acad::aaaa:1234/64`?  
-   _Answer:_  
+   _Answer:_  The subnet ID address is 0000 because its the fourth hextet in the subnet ID of the ipv6 address. In this case it is "::" meaning "0000" So that is the subnet ID.
 
 ---
 
