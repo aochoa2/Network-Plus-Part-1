@@ -67,14 +67,16 @@ Aida Ochoa
 ### Step 4: Configure R1, ISP, and S1 using provided initial configurations
 
 **Screenshot Placeholder:**  
-`!Device Configuration`
+![alt text](image-4.png) 
+![alt text](image-5.png)
+![alt text](image-6.png)
 
 ---
 
 ### Step 5: Configure IP host table on R1
 
 **Screenshot Placeholder:**  
-`!Host Table Configuration`
+![alt text](image-7.png)
 
 ---
 
@@ -154,16 +156,16 @@ Aida Ochoa
 ## Reflection Questions
 
 1. What could prevent ping or traceroute responses besides connectivity issues?  
-   _Answer:_  
+   _Answer:_  Firewalls and security settings can block a ping or tracert command by blocking the traffic and not allowing it to actually connect. Also, if a network is using a VPN, that traffic can get lost or blocked.
 
 2. What does the ping response to a non-existent address like 209.165.200.227 indicate?  
-   _Answer:_  
+   _Answer:_  Request timed out and was 100% loss
 
 3. What does the ping response to an unreachable network like 192.168.5.3 indicate?  
-   _Answer:_  
+   _Answer:_  I received the same response, the request had timed out. SOmetimes it can say the destination host is unreachable.
 
 4. What is the default IPv4 TTL on Windows and Cisco devices?  
-   _Answer:_  
+   _Answer:_  For Windows devices it is 128, for Cisco it's 255.
 
 5. What is the default IPv6 Hop Limit on Windows and Cisco devices?  
-   _Answer:_  
+   _Answer:_  128 hops on Windows devices and 64 on CIsco devices.
