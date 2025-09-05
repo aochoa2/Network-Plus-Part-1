@@ -1,4 +1,5 @@
 # Lab - Use Ping and Traceroute to Test Network Connectivity
+Aida Ochoa
 
 ## Topology & Addressing Table
 
