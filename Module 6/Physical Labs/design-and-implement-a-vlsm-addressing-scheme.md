@@ -30,86 +30,86 @@ Variable Length Subnet Masking (VLSM) allows subnetting a network multiple times
 ### Step 1: Determine Available Hosts and Subnets
 
 - How many host addresses are available in a /25 network?  
-  _Answer:_  
+  _Answer:_  126 hosts
 - What is the total number of host addresses needed in the topology?  
-  _Answer:_  
+  _Answer:_  80
 - How many subnets are needed in the network topology?  
-  _Answer:_  
+  _Answer:_  6
 
 ---
 
 ### Step 2: Determine the Largest Subnet
 
 - Subnet description:  
-  _Answer:_  
+  _Answer:_  BR1 LAN
 - Number of IP addresses required:  
-  _Answer:_  
+  _Answer:_  40
 - Subnet mask needed:  
-  _Answer:_  
+  _Answer:_  255.255.255.192 OR /26
 - Total host addresses supported:  
-  _Answer:_  
+  _Answer:_  62
 - Can the `/25` network support this subnet?  
-  _Answer:_  
+  _Answer:_  yes
 - Resulting network addresses:  
-  _Answer:_  
+  _Answer:_  192.168.33.128 /26   192.168.33.192 /26
 - Use the first network address for this subnet.
-
+    192.168.33.128/26
 ---
 
 ### Step 3: Determine the Second Largest Subnet
 
 - Subnet description:  
-  _Answer:_  
+  _Answer:_  BR2 LAN
 - Number of IP addresses required:  
-  _Answer:_  
+  _Answer:_  25
 - Subnet mask needed:  
-  _Answer:_  
+  _Answer:_  255.255.255.224 OR /27
 - Total host addresses supported:  
-  _Answer:_  
+  _Answer:_  30 hosts
 - Can the remaining subnet support this?  
-  _Answer:_  
+  _Answer:_  YES
 - Resulting network addresses:  
-  _Answer:_  
+  _Answer:_  192.168.33.192 /27   192.168.33.224 /27
 - Use the first network address for this subnet.
-
+    192.168.33.192 /27
 ---
 
 ### Step 4: Determine the Third Largest Subnet
 
 - Subnet description:  
-  _Answer:_  
+  _Answer:_  BR2 loT LAN
 - Number of IP addresses required:  
-  _Answer:_  
+  _Answer:_  7
 - Subnet mask needed:  
-  _Answer:_  
+  _Answer:_  255.255.255.248 OR /29
 - Total host addresses supported:  
-  _Answer:_  
+  _Answer:_  6
 - Can the remaining subnet support this?  
-  _Answer:_  
+  _Answer:_  YES
 - Resulting network addresses:  
-  _Answer:_  
-- Use the first address for this subnet  
-- Use second for CCTV LAN  
-- Use third for HVAC C2 LAN
+  _Answer:_  192.168.33.224/29  192.168.33.232/29   192.168.33.240/29   192.168.33.248/29
+- Use the first address for this subnet  - 192.168.33.224/29
+- Use second for CCTV LAN  - 192.168.33.232/29
+- Use third for HVAC C2 LAN - 192.168.33.240/29
 
 ---
 
 ### Step 5: Determine the Fourth Largest Subnet
 
 - Subnet description:  
-  _Answer:_  
+  _Answer:_  BR1-BR2 Link
 - Number of IP addresses required:  
-  _Answer:_  
+  _Answer:_  4
 - Subnet mask needed:  
-  _Answer:_  
+  _Answer:_  255.255.255.252 OR /30
 - Total host addresses supported:  
-  _Answer:_  
+  _Answer:_  2
 - Can the remaining subnet support this?  
-  _Answer:_  
+  _Answer:_  YES
 - Resulting network addresses:  
-  _Answer:_  
+  _Answer:_  192.168.33.248/30    192.168.33.252/30
 - Use the first network address for this subnet.
-
+    192.168.33.248/30
 ---
 
 ## Part 2: Design the VLSM Address Scheme
@@ -118,12 +118,12 @@ Variable Length Subnet Masking (VLSM) allows subnetting a network multiple times
 
 | Subnet Description   | Hosts Needed | Network Address /CIDR | First Host Address | Broadcast Address |
 |----------------------|--------------|------------------------|--------------------|-------------------|
-| BR1 LAN              | 40           |                        |                    |                   |
-| BR2 LAN              | 25           |                        |                    |                   |
-| BR2 IoT LAN          | 5            |                        |                    |                   |
-| BR2 CCTV LAN         | 4            |                        |                    |                   |
-| BR2 HVAC C2 LAN      | 4            |                        |                    |                   |
-| BR1-BR2 Link         | 2            |                        |                    |                   |
+| BR1 LAN              | 40           |  192.168.33.128/26     | 192.168.33.129     | 192.168.33.191    |
+| BR2 LAN              | 25           |  192.168.33.192/27     | 192.168.33.193     | 192.168.33.223    |
+| BR2 IoT LAN          | 5            |  192.168.33.224/29     | 192.168.33.225     | 192.168.33.231    |
+| BR2 CCTV LAN         | 4            |  192.168.33.232/29     | 192.168.33.233     | 192.168.33.239    |
+| BR2 HVAC C2 LAN      | 4            |  192.168.33.240/29     | 192.168.33.241     | 192.168.33.247    |
+| BR1-BR2 Link         | 2            |  192.168.33.248/30     | 192.168.33.249     | 192.168.33.251    |
 
 ---
 
