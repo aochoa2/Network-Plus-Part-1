@@ -52,23 +52,23 @@ Use IPv6 abbreviation rules to compress or decompress the following:
 
 1. **2002:0ec0:0200:0001:0000:04eb:44ce:08a2**  
    _Compressed:_  2002:ec0:200:1::4eb:44ce:8a2
-   _Decompressed:_  
+   _Decompressed:_  2002:0ec0:0200:0001:0000:04eb:44ce:08a2
 
 2. **fe80:0000:0000:0001:0000:60bb:008e:7402**  
    _Compressed:_  fe80::1:0:60bb:8e:7402
-   _Decompressed:_  
+   _Decompressed:_  fe80:0000:0000:0001:0000:60bb:008e:7402
 
 3. **fe80::7042:b3d7:3dec:84b8**  
-   _Compressed:_ 
+   _Compressed:_ fe80::7042:b3d7:3dec:84b8
    _Decompressed:_  fe80:0000:0000:0000:7042:b3d7:3dec:84b8
 
 4. **ff00::**  
-   _Compressed:_  
+   _Compressed:_  ff00::
    _Decompressed:_  ff00:0000:0000:0000:0000:0000:0000:0000
 
 5. **2001:0030:0001:acad:0000:330e:10c2:32bf**  
-   _Compressed:_  
-   _Decompressed:_  2001:30:1:acad::330e:10c2:32bf
+   _Compressed:_  2001:30:1:acad::330e:10c2:32bf
+   _Decompressed:_  2001:0030:0001:acad:0000:330e:10c2:32bf
 
 ---
 
