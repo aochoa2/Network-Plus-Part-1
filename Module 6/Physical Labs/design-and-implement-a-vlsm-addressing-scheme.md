@@ -176,7 +176,7 @@ Variable Length Subnet Masking (VLSM) allows subnetting a network multiple times
 ## Reflection Question
 
 **Can you think of a shortcut for calculating the network addresses of consecutive /30 subnets?**  
-_Answer:_  
+_Answer:_ A shortcut for finding the consecutive /30 subnets is by adding 4 to the last usable IP address.  
 
 ---
 
