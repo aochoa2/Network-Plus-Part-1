@@ -37,9 +37,6 @@
 
 ### Step 1: Cable the network as shown in the topology
 
-**Screenshot Placeholder:**  
-`![NetworkTopology`
-
 ---
 
 ### Step 2: Configure basic settings for each switch
@@ -59,8 +56,8 @@
 
 - Refer to the Addressing Table for IP configuration  
 **Screenshot Placeholder:**  
-`!PC IP Configuration`
-
+![alt text](image.png)
+![alt text](image-1.png)
 ---
 
 ## Part 2: Create VLANs and Assign Switch Ports
@@ -78,7 +75,8 @@
 1. Assign used ports to appropriate VLANs  
 2. Configure static access mode  
 3. Verify VLAN assignments using `show vlan brief`  
-
+![alt text](image-2.png)
+![alt text](image-3.png)
 ---
 
 ## Part 3: Configure an 802.1Q Trunk Between the Switches
@@ -89,20 +87,21 @@
 2. Set native VLAN to 1000  
 3. Allow VLANs 10, 20, 30, and 1000 on the trunk  
 4. Verify trunking with `show interfaces trunk`  
+![alt text](image-4.png)
 
 ---
 
 ### Step 2: Verify connectivity
 
 - **Can PC-A ping S1 VLAN 20?**  
-  _Answer:_  
+  _Answer:_  No
 
 - **Were the pings from PC-B to S2 successful? Explain.**  
-  _Answer:_  
+  _Answer:_  No, the pings were not successful because they are on seperate vlans.
 
 ---
 
 ## Reflection
 
 **Why is trunking important for VLAN communication across switches? What issues might arise if trunking is misconfigured?**  
-_Answer:_  
+_Answer:_  Trunking is important in order to carry muliple vlans over a single physical link. Trunking allows more than a single vlan to communicate throughout an entire network between switches. It allows devices on the same vlan to communicate even if they are on seperate switches. If trunking is not configured correctly the link wont form and the connection will be lost. Without trunking, we would need cables running through each switch we'd want to communicate with.
