@@ -52,7 +52,7 @@
 3. Configure trunk links between switches and the MLS  
 
 **Screenshot Placeholder:**  
-`!VLAN Configuration`
+![alt text](image-1.png)
 
 ---
 
@@ -64,7 +64,7 @@
 4. Ensure SVIs are up and active  
 
 **Screenshot Placeholder:**  
-`!SVI Configuration`
+![alt text](image-2.png)
 
 ---
 
@@ -86,7 +86,7 @@
 4. Enable the physical interface G0/0  
 
 **Screenshot Placeholder:**  
-`![Router Subinterface Configuration]
+![alt text](image.png)
 ---
 
 ## Part 3: Verify Inter-VLAN Connectivity
@@ -96,20 +96,21 @@
 3. Use `show ip route`, `show vlan brief`, and `show interfaces trunk` to verify configuration  
 
 **Were the pings successful?**  
-_Answer:_  
+_Answer:_ At first, no. The pings were not successful.  
+![alt text](image-3.png)
 
 **If not, what troubleshooting steps did you take?**  
-_Answer:_  
+_Answer:_  At first, they were unsuccessful. After reconfiguring the link between the PC and the router I was able to get a connection.
 
 ---
 
 ## Reflection Questions
 
 1. **What are the advantages of using a Multilayer Switch for Inter-VLAN Routing over Router-on-a-Stick?**  
-   _Answer:_  
+   _Answer:_ Some advantages of using an MLS for inter-vlan routing is the mls can route at a faster speed using a wired cable and it can be used as both a router and a switch. 
 
 2. **What are potential drawbacks of using ROAS in a large network?**  
-   _Answer:_  
+   _Answer:_ The loss of data by attempting to traffic so much and it can get a little bit overwhelming maintaining and configuring many vlans. 
 
 3. **How does trunking enable Inter-VLAN Routing in both configurations?**  
-   _Answer:_  
+   _Answer:_  Trunking carries traffic from multiple vlans between switches which allows a single physical link to carrymultiple vlans, letting these devices such as routers and mls to route between vlans.
